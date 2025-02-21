@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet"
+    href="style.css">
+</head>
+<body>
+    <div class="relative min-h-screen">
+        <!-- Navigation (MENU) -->
+        <nav id="navbar" class="fixed top-0 left-0 w-full z-10 px-6 py-5 bg-amber-950">
+            <!-- Desktop MENU -->
+            <div class="flex items-center justify-between container mx-auto">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="#home">
+                        <img src="images/logo.png" class="h-7 hover:opacity-70" alt="logo">
+                    </a>
+                </div>
+                <!-- Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-white">
+                    <a href="#home" class="text-xl hover:opacity-70">Home</a>
+                    <a href="#features" class="text-xl hover:opacity-70">Features</a>
+                    <a href="#process" class="text-xl hover:opacity-70">Our Process</a>
+                </div>
+                <!-- Button Signin -->
+                <button class="btn hidden md:block">SIGN IN</button>
+                <!-- Button Hamberger Menu -->
+                <button id="menu-toggle" class="md:hidden text-white hover:opacity-70 cursor-pointer">
+                    <svg width="42px" height="42px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Menu / Menu_Alt_01"> <path id="Vector" d="M12 17H19M5 12H19M5 7H19" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+                </button>
+            </div>
+
+            <!-- Mobile MENU -->
+            <div id="menu-mobile" class="absolute top-20 left-0 w-full bg-black opacity-90 md:hidden">
+                <a href="#home" class="block text-center p-4 text-white hover:bg-gray-700">Home</a>
+                <a href="#features" class="block text-center p-4 text-white hover:bg-gray-700">Features</a>
+                <a href="#process" class="block text-center p-4 text-white hover:bg-gray-700">Our Process</a>
+                <a href="login.html" class="block text-center p-4 text-white hover:bg-gray-700">SIGN IN</a>
+            </div>
+
+        </nav>
+
+        <!-- Hero Section -->
+        <!-- Features Section -->
+        <!-- Process Section -->
+        <!-- Footer Section -->
+    </div>
+</body>
+</html>

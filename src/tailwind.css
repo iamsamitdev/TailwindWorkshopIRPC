@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer base {
+    
+}
+
+@layer components {
+    .btn {
+        @apply bg-white text-blue-500 font-medium rounded-full px-8 py-4
+    }
+
+    .btn:hover {
+        @apply bg-blue-500 text-white cursor-pointer
+    }
+}
