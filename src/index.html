@@ -9,8 +9,9 @@
 </head>
 <body>
     <div class="relative min-h-screen">
+
         <!-- Navigation (MENU) -->
-        <nav id="navbar" class="fixed top-0 left-0 w-full z-10 px-6 py-5 bg-amber-950">
+        <nav id="navbar" class="fixed top-0 left-0 w-full z-10 px-6 py-5">
             <!-- Desktop MENU -->
             <div class="flex items-center justify-between container mx-auto">
                 <!-- Logo -->
@@ -26,7 +27,7 @@
                     <a href="#process" class="text-xl hover:opacity-70">Our Process</a>
                 </div>
                 <!-- Button Signin -->
-                <button class="btn hidden md:block">SIGN IN</button>
+                <a href="login.html" class="btn hidden md:block">SIGN IN</a>
                 <!-- Button Hamberger Menu -->
                 <button id="menu-toggle" class="md:hidden text-white hover:opacity-70 cursor-pointer">
                     <svg width="42px" height="42px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Menu / Menu_Alt_01"> <path id="Vector" d="M12 17H19M5 12H19M5 7H19" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
@@ -44,8 +45,142 @@
         </nav>
 
         <!-- Hero Section -->
+        <section class="relative w-full h-screen bg-[url('images/bgheader.png')] bg-cover bg-center">
+            <div class="container mx-auto px-6 pt-36 pb-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">A Digital Agency IRPC</h1>
+                <p class="text-xl text-white/90 mb-8">We are Creative and Professional Digital Agency</p>
+                <a href="login.html" class="btn">GET STARTED</a>
+            </div>
+            <div class="relative flex justify-center items-center">
+                <div class="p-4 max-w-6xl md:max-w-4xl">
+                    <img src="images/imgheader.png" alt="" class="rounded w-full h-auto">
+                </div>
+            </div>
+        </section>
+        
         <!-- Features Section -->
+        <section id="features" class="relative w-full px-6 py-20 mt-0 md:mt-8 lg:mt-24 bg-[url('images/bgfeatures.png')] bg-cover bg-center">
+            <div class="container mx-auto">
+                <h2 class="text-sm text-[#2BABE2] mb-2">FEATURES</h2>
+                <h3 class="text-2xl font-semibold mb-12">We are here to help you with</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg width="24px" height="24px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 1H12V15H16V1Z" fill="#df410c"></path> <path d="M6 5H10V15H6V5Z" fill="#df410c"></path> <path d="M0 9H4V15H0V9Z" fill="#df410c"></path> </g></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Grow your business</h3>
+                        <p class="text-gray-600">The magic wand for success is in figuring out how to bring in the profits and ensure the capacity needed to sustain that growth for posterity.</p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg width="24px" height="24px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 1H12V15H16V1Z" fill="#df410c"></path> <path d="M6 5H10V15H6V5Z" fill="#df410c"></path> <path d="M0 9H4V15H0V9Z" fill="#df410c"></path> </g></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Grow your business</h3>
+                        <p class="text-gray-600">The magic wand for success is in figuring out how to bring in the profits and ensure the capacity needed to sustain that growth for posterity.</p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg width="24px" height="24px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 1H12V15H16V1Z" fill="#df410c"></path> <path d="M6 5H10V15H6V5Z" fill="#df410c"></path> <path d="M0 9H4V15H0V9Z" fill="#df410c"></path> </g></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Grow your business</h3>
+                        <p class="text-gray-600">The magic wand for success is in figuring out how to bring in the profits and ensure the capacity needed to sustain that growth for posterity.</p>
+                    </div>
+
+                    <!-- Feature Card 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg width="24px" height="24px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 1H12V15H16V1Z" fill="#df410c"></path> <path d="M6 5H10V15H6V5Z" fill="#df410c"></path> <path d="M0 9H4V15H0V9Z" fill="#df410c"></path> </g></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Grow your business</h3>
+                        <p class="text-gray-600">The magic wand for success is in figuring out how to bring in the profits and ensure the capacity needed to sustain that growth for posterity.</p>
+                    </div>
+
+                    <!-- Feature Card 5 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg width="24px" height="24px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 1H12V15H16V1Z" fill="#df410c"></path> <path d="M6 5H10V15H6V5Z" fill="#df410c"></path> <path d="M0 9H4V15H0V9Z" fill="#df410c"></path> </g></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Grow your business</h3>
+                        <p class="text-gray-600">The magic wand for success is in figuring out how to bring in the profits and ensure the capacity needed to sustain that growth for posterity.</p>
+                    </div>
+
+                    <!-- Feature Card 6 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg width="24px" height="24px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 1H12V15H16V1Z" fill="#df410c"></path> <path d="M6 5H10V15H6V5Z" fill="#df410c"></path> <path d="M0 9H4V15H0V9Z" fill="#df410c"></path> </g></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Grow your business</h3>
+                        <p class="text-gray-600">The magic wand for success is in figuring out how to bring in the profits and ensure the capacity needed to sustain that growth for posterity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Process Section -->
+        <section id="process" class="relative w-full px-6 py-20 bg-[url('images/bgourprocess.jpg')] bg-cover bg-center">
+            <div class="container mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-sm text-blue-200 mb-2">
+                        HOW IT WORKS
+                    </h2>
+                    <h3 class="text-2xl text-white font-semibold">Our Process</h3>
+                    <p class="text-white/90 mt-4">
+                        We know the best solution for all of your business ideas and we can help you solve all business problems
+                    </p>
+                </div>
+                <div class="max-w-6xl mx-auto">
+                    
+                    <!-- Process Card 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <img src="images/process1.png" alt="">
+                            <div class="flex flex-col gap-3 mt-4 md:mt-6">
+                                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                                    <svg width="24px" height="24px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 1H12V15H16V1Z" fill="#df410c"></path> <path d="M6 5H10V15H6V5Z" fill="#df410c"></path> <path d="M0 9H4V15H0V9Z" fill="#df410c"></path> </g></svg>
+                                </div>
+                                <h3 class="text-2xl font-semibold text-gray-800">Data tracking</h3>
+                                <p class="text-gray-600">The tracking and software which when used together allows you to know where everything is at any point in time.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Process Card 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <img src="images/process2.png" alt="">
+                            <div class="flex flex-col gap-3 mt-4 md:mt-6">
+                                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                                    <svg width="24px" height="24px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 1H12V15H16V1Z" fill="#df410c"></path> <path d="M6 5H10V15H6V5Z" fill="#df410c"></path> <path d="M0 9H4V15H0V9Z" fill="#df410c"></path> </g></svg>
+                                </div>
+                                <h3 class="text-2xl font-semibold text-gray-800">Data tracking</h3>
+                                <p class="text-gray-600">The tracking and software which when used together allows you to know where everything is at any point in time.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Process Card 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <img src="images/process3.png" alt="">
+                            <div class="flex flex-col gap-3 mt-4 md:mt-6">
+                                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                                    <svg width="24px" height="24px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 1H12V15H16V1Z" fill="#df410c"></path> <path d="M6 5H10V15H6V5Z" fill="#df410c"></path> <path d="M0 9H4V15H0V9Z" fill="#df410c"></path> </g></svg>
+                                </div>
+                                <h3 class="text-2xl font-semibold text-gray-800">Data tracking</h3>
+                                <p class="text-gray-600">The tracking and software which when used together allows you to know where everything is at any point in time.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <!-- Footer Section -->
     </div>
 </body>
